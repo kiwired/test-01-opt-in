@@ -5,7 +5,7 @@ import { OptInContext } from './context'
 
 export const OptInProvider = ({ children }: { children: React.ReactNode }) => {
 
-	const [verified, setVerified] = useState(true)
+	const [verified, setVerified] = useState(false)
 	const [lastSend, setLastSend] = useState<Date | null>(null)
 
 	const onVerify = (code: string, callback: (error?: Error) => void) => {
